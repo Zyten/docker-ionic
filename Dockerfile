@@ -31,7 +31,7 @@ RUN \
 ARG JAVA_VERSION
 ENV JAVA_VERSION ${JAVA_VERSION:-8}
 
-ENV JAVA_HOME ${JAVA_HOME:-/usr/lib/jvm/java-${JAVA_VERSION}-oracle}
+ENV JAVA_HOME ${JAVA_HOME:-/usr/lib/jvm/java-8-openjdk-amd64}
 
 RUN apt install -y openjdk-8-jdk
 
